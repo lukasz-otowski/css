@@ -14,32 +14,9 @@ header {
 
 }
 
-/* NAV */
-
-nav {
-    height: 50px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    height: inherit;
-
-}
-
-nav ul li {
-    flex-basis: 20%;
-
-    height: 50%;
-    background-color: #a00;
-    list-style-type: none;
-    border: 2px solid #f00;
+h2{
     text-align: center;
-    line-height: -15%;
 }
-
 /* B L U E - P A R T */
 
 .blue-part {
@@ -113,6 +90,82 @@ nav ul li {
     }
 }
 
+/* C Y A N - P A R T */
+.cyan {
+    display: flex;
+    align-content: start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;    
+}
+
+.cyan:hover{
+    animation: alignContent 2s infinite;
+}
+
+.cyan .cyanItem {
+    flex-basis: 20%;
+    height: 30%;
+    background-color: #0aa;
+    border: 2px solid #0ff;
+    text-align: center;
+    line-height: -15%;
+}
+
+@keyframes alignContent {
+    0% {
+        align-content: start;
+    }
+    25% {
+        align-content: center;
+    }
+    50% {
+        align-content: space-around;
+    }
+    75% {
+        align-content: space-between;
+    }
+}
+
+/* G O L D - P A R T */
+.gold {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #880;
+    border: 2px solid #ff0;
+    width: 100%;
+    height: 200px;    
+}
+
+.gold:hover{
+    animation: alignItems 2s infinite;
+}
+
+.gold .goldItem {
+    background-color: #aa0;
+    border: 2px solid #ff0;
+    text-align: center;
+    width: 23%;
+}
+
+@keyframes alignItems {
+    0% {
+        align-items: start;
+    }
+    25% {
+        align-items: center;
+    }
+    50% {
+        align-items: end;
+    }
+    75% {
+        align-items: stretch;
+    }
+}
+
 /* G R E E N - P A R T */
 
 .green-part {
@@ -179,23 +232,20 @@ nav ul li {
 .red-part {
     display: flex;
     flex-direction: column;
-
     width: 100%;
-    height: 500px;
+    height: 150px;
 }
 
 .red-part ul {
     display: flex;
     justify-content: space-around;
-
     width: 100%;
-    height: 20%;
+    height: 100%;
     padding-left: 0px;
 }
 
 .red-part ul li {
     flex-basis: 7%;
-
     height: 80%;
     list-style-type: none;
     background-color: #a44;
@@ -212,50 +262,4 @@ nav ul li {
     flex-basis: 4%;
     margin-left: 3%;
     margin-top: 1%;
-}
-
-/* second list */
-
-.red-list-2 li:nth-child(2n+3) {
-    height: 50%;
-    margin-top: 3%;
-}
-
-.red-list-2 li:nth-child(3n+1) {
-    flex-basis: 4%;
-    margin-right: 3%;
-}
-
-.red-list-2 li:nth-child(2n+2) {
-    margin-top: -1%;
-}
-
-/* third list */
-
-.red-list-3 li:nth-child(3n+1) {
-    height: 50%;
-    margin-top: 1%;
-    margin-bottom: 15%;
-}
-
-.red-list-3 li:nth-child(odd) {
-    flex-basis: 5%;
-}
-
-/* fourth list */
-
-.red-list-4 li:nth-child(2n+2) {
-    height: 60%;
-    margin-top: 1%;
-    margin-bottom: 10%;
-}
-
-.red-list-4 li:nth-child(3n+1) {
-    flex-basis: 5%;
-    margin-top: -1%;
-}
-
-.red-list-4 li:nth-child(4n+5) {
-    flex-basis: 10%;
-    height: 50%;
 }
