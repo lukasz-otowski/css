@@ -1,0 +1,17 @@
+body{
+    background: #003;
+}
+header{
+    display: block;
+    color: #9ff;
+    font-family: arial;
+    font-style: italic;
+    margin: 0 auto;
+    width: 150px;
+}
+nav a{
+    color: #99f;
+    text-decoration: none;
+}
+nav ul {list-style: none}
+nav li::before {content: "•  "; color: #99f}
