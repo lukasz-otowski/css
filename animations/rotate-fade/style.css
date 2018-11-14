@@ -1,5 +1,6 @@
 body{
     background: #003;
+    font-family: KaiTi;
     color: #99f;
 }
 .container{
@@ -11,7 +12,7 @@ body{
 }
 .animate p{
     display: inline-block;
-    font-size: 65px;
+    font-size: 100px;
 }
 .animate p:nth-child(1){
     animation: rotate 4s infinite;
@@ -65,4 +66,8 @@ body{
     to  { 
         opacity:0;
     }
+}
+@font-face {
+    font-family: KaiTi;
+    src: url(KaiTi.ttf);
 }
